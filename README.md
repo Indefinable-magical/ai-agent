@@ -1,4 +1,4 @@
-# AI 超级智能体项目
+# AI 股票助手
 
 > 作者：Indefinable-magical
 
