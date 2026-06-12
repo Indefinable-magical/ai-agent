@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yu.aiagent.mapper.ChatMemoryMapper">
+
+    <resultMap id="BaseResultMap" type="com.yu.aiagent.model.entity.ChatMemory">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="conversationId" column="conversationId" jdbcType="VARCHAR"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="appType" column="appType" jdbcType="VARCHAR"/>
+            <result property="messageType" column="messageType" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="metadata" column="metadata" jdbcType="OTHER"/>
+            <result property="messageOrder" column="messageOrder" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,conversationId,userId,
+        appType,messageType,content,
+        metadata,messageOrder,createTime,
+        updateTime,isDelete
+    </sql>
+</mapper>

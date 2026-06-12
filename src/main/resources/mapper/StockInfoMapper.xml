@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yu.aiagent.mapper.StockInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.yu.aiagent.model.entity.StockInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="stockCode" column="stockCode" jdbcType="VARCHAR"/>
+            <result property="stockName" column="stockName" jdbcType="VARCHAR"/>
+            <result property="market" column="market" jdbcType="VARCHAR"/>
+            <result property="industry" column="industry" jdbcType="VARCHAR"/>
+            <result property="themes" column="themes" jdbcType="VARCHAR"/>
+            <result property="riskTags" column="riskTags" jdbcType="VARCHAR"/>
+            <result property="reason" column="reason" jdbcType="VARCHAR"/>
+            <result property="hotScore" column="hotScore" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,stockCode,stockName,
+        market,industry,themes,
+        riskTags,reason,hotScore,
+        createTime,updateTime,isDelete
+    </sql>
+</mapper>
