@@ -1,6 +1,6 @@
 # AI 超级智能体项目
 
-> 作者：[程序员小雨](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 作者：Indefinable-magical
 
 ## 项目介绍
 
